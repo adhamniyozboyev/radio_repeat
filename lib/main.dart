@@ -25,7 +25,8 @@ class _MyRadioState extends State<MyRadio> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           RadioListTile(
-            subtitle: Text('salom dunyo'),
+              tileColor: Colors.blue,
+              subtitle: Text('salom dunyo'),
               title: Text('Hello world '),
               value: 1,
               groupValue: val,
@@ -36,8 +37,10 @@ class _MyRadioState extends State<MyRadio> {
                 });
               }),
           RadioListTile(
-            activeColor: Colors.yellow,
-            subtitle: Text('Salom koinot'),
+              tileColor: Colors.yellow,
+              toggleable: true,
+              activeColor: Colors.yellow,
+              subtitle: Text('Salom koinot'),
               title: Text('Hi Universe '),
               value: 2,
               groupValue: val,
