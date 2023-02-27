@@ -37,6 +37,8 @@ class _MyRadioState extends State<MyRadio> {
                 });
               }),
           RadioListTile(
+            selected: false,
+            secondary: Text('what??'),
               tileColor: Colors.yellow,
               toggleable: true,
               activeColor: Colors.yellow,
